@@ -12,7 +12,7 @@
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/src/app/api/chatRoom/getChat.ts"
+      "dest": "/"
     }
   ]
 }
