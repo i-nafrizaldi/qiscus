@@ -3,7 +3,6 @@
   "builds": [
     {
       "src": "/src/app/api/chatRoom/getChat.ts",
-      "dest": "/src/app/api/chatRoom/getChat.ts",
       "use": "@vercel/node",
       "config": {
         "includeFiles": ["db.json"]
