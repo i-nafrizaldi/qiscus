@@ -14,7 +14,21 @@ bun install
 
 
 1. Run the JSON Server
+The json-server is a JavaScript library to create testing REST API with form of
+HTTP request (Network call).
+For installation you can install json-server globally.
+
+npm install -g json-server
+
+Now we can create server locally with json-server or the other name is fake
+API because we don’t have to create API.
+To create API, we can learn that in module Back-end.
 Open a separate terminal window and run the json-server to serve the data from the db.json file:
+
+To run our json-server with its data, we have to access its directory in terminal, then we can use this command:
+
+
+json-server -p 2000 db.json
 
 This will run the json-server on http://localhost:2000 and serve the contents of the db.json file as a RESTful API.
 
