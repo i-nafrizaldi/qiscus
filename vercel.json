@@ -1,18 +1,14 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "/src/app/page.tsx",
-      "use": "@vercel/node",
-      "config": {
-        "includeFiles": ["db.json"]
-      }
+  "functions": {
+    "/src/app/api/chatRoom/getChat.ts": {
+      "memory": 1024,
+      "includeFiles": "db.json"
     }
-  ],
-  "routes": [
+  },
+  "rewrites": [
     {
-      "src": "/(.*)",
-      "dest": "/src/app/page.tsx"
+      "source": "/(.*)",
+      "destination": "/src/app/api/chatRoom/getChat.ts"
     }
   ]
 }
